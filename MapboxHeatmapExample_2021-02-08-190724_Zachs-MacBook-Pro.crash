@@ -1,0 +1,873 @@
+Process:               MapboxHeatmapExample [12344]
+Path:                  /Users/USER/Library/Developer/CoreSimulator/Devices/30BC1132-CD28-48F6-9734-DB578F778314/data/Containers/Bundle/Application/92AF9333-E4BD-4053-9CA2-FECC5762B250/MapboxHeatmapExample.app/MapboxHeatmapExample
+Identifier:            MapboxHeatmapExample
+Version:               1.0 (1)
+Code Type:             X86-64 (Translated)
+Parent Process:        launchd_sim [3293]
+Responsible:           SimulatorTrampoline [657]
+User ID:               501
+
+Date/Time:             2021-02-08 19:07:21.338 -0500
+OS Version:            macOS 11.1 (20C69)
+Report Version:        12
+Anonymous UUID:        0F7B29CF-C75C-2ADD-2215-FF7FB02B3890
+
+
+Time Awake Since Boot: 1600 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_CRASH (SIGABRT)
+Exception Codes:       0x0000000000000000, 0x0000000000000000
+Exception Note:        EXC_CORPSE_NOTIFY
+
+Application Specific Information:
+terminating with uncaught exception of type std::runtime_error
+abort() called
+
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000108367cf0 ???
+2   libsystem_c.dylib             	0x00007fff200fabd4 abort + 120
+3   libc++abi.dylib               	0x00007fff20250818 abort_message + 231
+4   libc++abi.dylib               	0x00007fff20241e7d demangling_terminate_handler() + 266
+5   libobjc.A.dylib               	0x00007fff201781d9 _objc_terminate() + 104
+6   libc++abi.dylib               	0x00007fff2024fc47 std::__terminate(void (*)()) + 8
+7   libc++abi.dylib               	0x00007fff202525b6 __cxa_rethrow + 99
+8   libobjc.A.dylib               	0x00007fff2017810c objc_exception_rethrow + 37
+9   com.apple.CoreFoundation      	0x00007fff203a1cc4 CFRunLoopRunSpecific + 861
+10  com.apple.GraphicsServices    	0x00007fff2b793db3 GSEventRunModal + 139
+11  com.apple.UIKitCore           	0x00007fff2466d40f -[UIApplication _run] + 912
+12  com.apple.UIKitCore           	0x00007fff24672320 UIApplicationMain + 101
+13  org.reactjs.native.example.MapboxHeatmapExample	0x0000000100f03a70 main + 112 (main.m:7)
+14  libdyld.dylib                 	0x00007fff20257409 start + 1
+
+Thread 1:: com.apple.rosetta.exceptionserver
+0   ???                           	0x00007ffdffcd8990 ???
+1   ???                           	0x00007ffdffd03da4 ???
+
+Thread 2:
+0   ???                           	0x00007ffdffd30914 ???
+
+Thread 3:
+0   ???                           	0x00007ffdffd30914 ???
+
+Thread 4:
+0   ???                           	0x00007ffdffd30914 ???
+
+Thread 5:: com.apple.uikit.eventfetch-thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.Foundation          	0x00007fff20846e61 -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 209
+6   com.apple.Foundation          	0x00007fff208470d0 -[NSRunLoop(NSRunLoop) runUntilDate:] + 72
+7   com.apple.UIKitCore           	0x00007fff247244a9 -[UIEventFetcher threadMain] + 464
+8   com.apple.Foundation          	0x00007fff2086f521 __NSThread__start__ + 1042
+9   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+10  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 6:
+0   ???                           	0x00007ffdffd30914 ???
+
+Thread 7:
+0   ???                           	0x00007ffdffd30914 ???
+
+Thread 8:
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x000000010447c150 ???
+2   org.reactjs.native.example.MapboxHeatmapExample	0x0000000101853164 event_base_loop + 699
+3   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010b392f (anonymous namespace)::EventBaseBackend::eb_event_base_loop(int) + 31 (EventBase.cpp:104)
+4   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a6723 folly::EventBase::loopBody(int, bool) + 1731 (EventBase.cpp:397)
+5   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a601d folly::EventBase::loop() + 77 (EventBase.cpp:315)
+6   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a87a3 folly::EventBase::loopForever() + 99 (EventBase.cpp:538)
+7   org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b27c9 folly::run(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&) + 153 (ScopedEventBaseThread.cpp:40)
+8   org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b68cd decltype(std::__1::forward<void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&)>(fp)(std::__1::forward<folly::EventBaseManager*>(fp0), std::__1::forward<folly::EventBase*>(fp0), std::__1::forward<folly::Baton<true, std::__1::atomic>*>(fp0), std::__1::forward<folly::Range<char const*> >(fp0))) std::__1::__invoke<void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> >(void (*&&)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*&&, folly::EventBase*&&, folly::Baton<true, std::__1::atomic>*&&, folly::Range<char const*>&&) + 125 (type_traits:3545)
+9   org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b67d9 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*>, 2ul, 3ul, 4ul, 5ul>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> >&, std::__1::__tuple_indices<2ul, 3ul, 4ul, 5ul>) + 137 (thread:273)
+10  org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b5d56 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> > >(void*) + 118 (thread:284)
+11  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+12  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 9:
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x000000010447c150 ???
+2   org.reactjs.native.example.MapboxHeatmapExample	0x0000000101853164 event_base_loop + 699
+3   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010b392f (anonymous namespace)::EventBaseBackend::eb_event_base_loop(int) + 31 (EventBase.cpp:104)
+4   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a6723 folly::EventBase::loopBody(int, bool) + 1731 (EventBase.cpp:397)
+5   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a601d folly::EventBase::loop() + 77 (EventBase.cpp:315)
+6   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a87a3 folly::EventBase::loopForever() + 99 (EventBase.cpp:538)
+7   org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b27c9 folly::run(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&) + 153 (ScopedEventBaseThread.cpp:40)
+8   org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b68cd decltype(std::__1::forward<void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&)>(fp)(std::__1::forward<folly::EventBaseManager*>(fp0), std::__1::forward<folly::EventBase*>(fp0), std::__1::forward<folly::Baton<true, std::__1::atomic>*>(fp0), std::__1::forward<folly::Range<char const*> >(fp0))) std::__1::__invoke<void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> >(void (*&&)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*&&, folly::EventBase*&&, folly::Baton<true, std::__1::atomic>*&&, folly::Range<char const*>&&) + 125 (type_traits:3545)
+9   org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b67d9 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*>, 2ul, 3ul, 4ul, 5ul>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> >&, std::__1::__tuple_indices<2ul, 3ul, 4ul, 5ul>) + 137 (thread:273)
+10  org.reactjs.native.example.MapboxHeatmapExample	0x00000001011b5d56 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> const&), folly::EventBaseManager*, folly::EventBase*, folly::Baton<true, std::__1::atomic>*, folly::Range<char const*> > >(void*) + 118 (thread:284)
+11  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+12  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 10:: FutureTimekeepr
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x000000010447c150 ???
+2   org.reactjs.native.example.MapboxHeatmapExample	0x0000000101853164 event_base_loop + 699
+3   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010b392f (anonymous namespace)::EventBaseBackend::eb_event_base_loop(int) + 31 (EventBase.cpp:104)
+4   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a6723 folly::EventBase::loopBody(int, bool) + 1731 (EventBase.cpp:397)
+5   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a601d folly::EventBase::loop() + 77 (EventBase.cpp:315)
+6   org.reactjs.native.example.MapboxHeatmapExample	0x00000001010a87a3 folly::EventBase::loopForever() + 99 (EventBase.cpp:538)
+7   org.reactjs.native.example.MapboxHeatmapExample	0x0000000101222cb1 folly::ThreadWheelTimekeeper::ThreadWheelTimekeeper()::$_0::operator()() const + 33 (ThreadWheelTimekeeper.cpp:32)
+8   org.reactjs.native.example.MapboxHeatmapExample	0x0000000101222c3d decltype(std::__1::forward<folly::ThreadWheelTimekeeper::ThreadWheelTimekeeper()::$_0>(fp)()) std::__1::__invoke<folly::ThreadWheelTimekeeper::ThreadWheelTimekeeper()::$_0>(folly::ThreadWheelTimekeeper::ThreadWheelTimekeeper()::$_0&&) + 29 (type_traits:3545)
+9   org.reactjs.native.example.MapboxHeatmapExample	0x0000000101222ba5 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, folly::ThreadWheelTimekeeper::ThreadWheelTimekeeper()::$_0>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, folly::ThreadWheelTimekeeper::ThreadWheelTimekeeper()::$_0>&, std::__1::__tuple_indices<>) + 37 (thread:273)
+10  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101222426 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, folly::ThreadWheelTimekeeper::ThreadWheelTimekeeper()::$_0> >(void*) + 118 (thread:284)
+11  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+12  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 11:: com.facebook.react.JavaScript
+0   <translation info unavailable>	0x0000000103bcba10 ???
+1   <translation info unavailable>	0x0000000103bcb950 ???
+2   com.apple.JavaScriptCore      	0x00007fff30f1057f JSC::InlineAccess::generateSelfPropertyReplace(JSC::StructureStubInfo&, JSC::Structure*, int) + 703
+3   com.apple.JavaScriptCore      	0x00007fff3143d6dc JSC::repatchPutByID(JSC::JSGlobalObject*, JSC::CodeBlock*, JSC::JSValue, JSC::Structure*, JSC::CacheableIdentifier, JSC::PutPropertySlot const&, JSC::StructureStubInfo&, JSC::PutKind) + 620
+4   com.apple.JavaScriptCore      	0x00007fff313ee190 operationPutByIdStrictOptimize + 1712
+5   ???                           	0x0000518a07b1df74 ???
+6   com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+7   com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+8   com.apple.JavaScriptCore      	0x00007fff30ccc39f llint_entry + 104395
+9   com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+10  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+11  com.apple.JavaScriptCore      	0x00007fff30ccc39f llint_entry + 104395
+12  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+13  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+14  com.apple.JavaScriptCore      	0x00007fff30ccc39f llint_entry + 104395
+15  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+16  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+17  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+18  com.apple.JavaScriptCore      	0x00007fff30ccd407 llint_entry + 108595
+19  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+20  ???                           	0x0000518a07b1964a ???
+21  com.apple.JavaScriptCore      	0x00007fff30ccc31f llint_entry + 104267
+22  com.apple.JavaScriptCore      	0x00007fff30cb29df vmEntryToJavaScript + 216
+23  com.apple.JavaScriptCore      	0x00007fff31362686 JSC::Interpreter::executeCall(JSC::JSGlobalObject*, JSC::JSObject*, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 518
+24  com.apple.JavaScriptCore      	0x00007fff3166fcf5 JSC::boundThisNoArgsFunctionCall(JSC::JSGlobalObject*, JSC::CallFrame*) + 837
+25  com.apple.JavaScriptCore      	0x00007fff30cb2b31 vmEntryToNative + 226
+26  com.apple.JavaScriptCore      	0x00007fff313626bd JSC::Interpreter::executeCall(JSC::JSGlobalObject*, JSC::JSObject*, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 573
+27  com.apple.JavaScriptCore      	0x00007fff315c8fa4 JSC::profiledCall(JSC::JSGlobalObject*, JSC::ProfilingReason, JSC::JSValue, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 164
+28  com.apple.JavaScriptCore      	0x00007fff30d36f97 JSObjectCallAsFunction + 791
+29  org.reactjs.native.example.MapboxHeatmapExample	0x000000010169f728 facebook::jsc::JSCRuntime::call(facebook::jsi::Function const&, facebook::jsi::Value const&, facebook::jsi::Value const*, unsigned long) + 344 (JSCRuntime.cpp:1253)
+30  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016af6bd facebook::jsi::Function::call(facebook::jsi::Runtime&, facebook::jsi::Value const*, unsigned long) const + 125 (jsi-inl.h:224)
+31  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016af5db facebook::jsi::Function::call(facebook::jsi::Runtime&, std::initializer_list<facebook::jsi::Value>) const + 107 (jsi-inl.h:229)
+32  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016cad80 facebook::jsi::Value facebook::jsi::Function::call<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, facebook::jsi::Value>(facebook::jsi::Runtime&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, facebook::jsi::Value&&) const + 368 (jsi-inl.h:237)
+33  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016caba6 facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5::operator()() const + 166 (JSIExecutor.cpp:231)
+34  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016caadd decltype(std::__1::forward<facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5&>(fp)()) std::__1::__invoke<facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5&>(facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5&) + 29 (type_traits:3545)
+35  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016caa8d void std::__1::__invoke_void_return_wrapper<void>::__call<facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5&>(facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5&) + 29 (__functional_base:348)
+36  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016caa5d std::__1::__function::__alloc_func<facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5, std::__1::allocator<facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5>, void ()>::operator()() + 29 (functional:1546)
+37  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016c998e std::__1::__function::__func<facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5, std::__1::allocator<facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&)::$_5>, void ()>::operator()() + 30 (functional:1720)
+38  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101705765 std::__1::__function::__value_func<void ()>::operator()() const + 53 (functional:1873)
+39  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101705675 std::__1::function<void ()>::operator()() const + 21 (functional:2548)
+40  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101404db9 facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) + 25 (JSIExecutor.h:107)
+41  org.reactjs.native.example.MapboxHeatmapExample	0x000000010140792c decltype(std::__1::forward<void (*&)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)>(fp)(std::__1::forward<std::__1::function<void ()> const&>(fp0), std::__1::forward<std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()> >(fp0))) std::__1::__invoke<void (*&)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>), std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()> >(void (*&)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>), std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>&&) + 108 (type_traits:3545)
+42  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101407897 void std::__1::__invoke_void_return_wrapper<void>::__call<void (*&)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>), std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()> >(void (*&)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>), std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>&&) + 71 (__functional_base:348)
+43  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101407827 std::__1::__function::__alloc_func<void (*)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>), std::__1::allocator<void (*)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)>, void (std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)>::operator()(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>&&) + 71 (functional:1546)
+44  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101406428 std::__1::__function::__func<void (*)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>), std::__1::allocator<void (*)(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)>, void (std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)>::operator()(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>&&) + 72 (functional:1720)
+45  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016c8faa std::__1::__function::__value_func<void (std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)>::operator()(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>&&) const + 106 (functional:1873)
+46  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016b98f5 std::__1::function<void (std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)>::operator()(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) const + 69 (functional:2548)
+47  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016b955b facebook::react::JSIExecutor::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, folly::dynamic const&) + 491 (JSIExecutor.cpp:229)
+48  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016863d3 facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2::operator()(facebook::react::JSExecutor*) const + 739 (NativeToJsBridge.cpp:198)
+49  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016860d2 decltype(std::__1::forward<facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2&>(fp)(std::__1::forward<facebook::react::JSExecutor*>(fp0))) std::__1::__invoke<facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2&, facebook::react::JSExecutor*>(facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2&, facebook::react::JSExecutor*&&) + 50 (type_traits:3545)
+50  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101686072 void std::__1::__invoke_void_return_wrapper<void>::__call<facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2&, facebook::react::JSExecutor*>(facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2&, facebook::react::JSExecutor*&&) + 50 (__functional_base:348)
+51  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101686032 std::__1::__function::__alloc_func<facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2, std::__1::allocator<facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2>, void (facebook::react::JSExecutor*)>::operator()(facebook::react::JSExecutor*&&) + 50 (functional:1546)
+52  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101684cb3 std::__1::__function::__func<facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2, std::__1::allocator<facebook::react::NativeToJsBridge::callFunction(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, folly::dynamic&&)::$_2>, void (facebook::react::JSExecutor*)>::operator()(facebook::react::JSExecutor*&&) + 51 (functional:1720)
+53  org.reactjs.native.example.MapboxHeatmapExample	0x000000010169164d std::__1::__function::__value_func<void (facebook::react::JSExecutor*)>::operator()(facebook::react::JSExecutor*&&) const + 77 (functional:1873)
+54  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016915d0 std::__1::function<void (facebook::react::JSExecutor*)>::operator()(facebook::react::JSExecutor*) const + 48 (functional:2548)
+55  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101691598 facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8::operator()() const + 104 (NativeToJsBridge.cpp:301)
+56  org.reactjs.native.example.MapboxHeatmapExample	0x000000010169150d decltype(std::__1::forward<facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8&>(fp)()) std::__1::__invoke<facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8&>(facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8&) + 29 (type_traits:3545)
+57  org.reactjs.native.example.MapboxHeatmapExample	0x00000001016914bd void std::__1::__invoke_void_return_wrapper<void>::__call<facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8&>(facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8&) + 29 (__functional_base:348)
+58  org.reactjs.native.example.MapboxHeatmapExample	0x000000010169148d std::__1::__function::__alloc_func<facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8, std::__1::allocator<facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8>, void ()>::operator()() + 29 (functional:1546)
+59  org.reactjs.native.example.MapboxHeatmapExample	0x000000010168ffee std::__1::__function::__func<facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8, std::__1::allocator<facebook::react::NativeToJsBridge::runOnExecutorQueue(std::__1::function<void (facebook::react::JSExecutor*)>)::$_8>, void ()>::operator()() + 30 (functional:1720)
+60  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101705765 std::__1::__function::__value_func<void ()>::operator()() const + 53 (functional:1873)
+61  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101705675 std::__1::function<void ()>::operator()() const + 21 (functional:2548)
+62  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101465188 facebook::react::tryAndReturnError(std::__1::function<void ()> const&) + 24 (RCTCxxUtils.mm:74)
+63  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101492471 facebook::react::RCTMessageThread::tryFunc(std::__1::function<void ()> const&) + 33 (RCTMessageThread.mm:68)
+64  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101497883 facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1::operator()() const + 83 (RCTMessageThread.mm:82)
+65  org.reactjs.native.example.MapboxHeatmapExample	0x000000010149780d decltype(std::__1::forward<facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1&>(fp)()) std::__1::__invoke<facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1&>(facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1&) + 29 (type_traits:3545)
+66  org.reactjs.native.example.MapboxHeatmapExample	0x00000001014977bd void std::__1::__invoke_void_return_wrapper<void>::__call<facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1&>(facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1&) + 29 (__functional_base:348)
+67  org.reactjs.native.example.MapboxHeatmapExample	0x000000010149778d std::__1::__function::__alloc_func<facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1, std::__1::allocator<facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1>, void ()>::operator()() + 29 (functional:1546)
+68  org.reactjs.native.example.MapboxHeatmapExample	0x00000001014962ee std::__1::__function::__func<facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1, std::__1::allocator<facebook::react::RCTMessageThread::runOnQueue(std::__1::function<void ()>&&)::$_1>, void ()>::operator()() + 30 (functional:1720)
+69  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101705765 std::__1::__function::__value_func<void ()>::operator()() const + 53 (functional:1873)
+70  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101705675 std::__1::function<void ()>::operator()() const + 21 (functional:2548)
+71  org.reactjs.native.example.MapboxHeatmapExample	0x00000001014920d0 ___ZN8facebook5react16RCTMessageThread8runAsyncENSt3__18functionIFvvEEE_block_invoke + 48 (RCTMessageThread.mm:44)
+72  com.apple.CoreFoundation      	0x00007fff203a85db __CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__ + 12
+73  com.apple.CoreFoundation      	0x00007fff203a79ef __CFRunLoopDoBlocks + 434
+74  com.apple.CoreFoundation      	0x00007fff203a240c __CFRunLoopRun + 899
+75  com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+76  org.reactjs.native.example.MapboxHeatmapExample	0x0000000101434101 +[RCTCxxBridge runRunLoop] + 993 (RCTCxxBridge.mm:266)
+77  com.apple.Foundation          	0x00007fff2086f521 __NSThread__start__ + 1042
+78  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+79  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 12:: JavaScriptCore bmalloc scavenger
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   libc++.1.dylib                	0x00007fff2029de93 std::__1::condition_variable::__do_timed_wait(std::__1::unique_lock<std::__1::mutex>&, std::__1::chrono::time_point<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l> > >) + 93
+3   com.apple.JavaScriptCore      	0x00007fff31aa7a7e bmalloc::Scavenger::threadRunLoop() + 654
+4   com.apple.JavaScriptCore      	0x00007fff31aa7279 bmalloc::Scavenger::threadEntryPoint(bmalloc::Scavenger*) + 9
+5   com.apple.JavaScriptCore      	0x00007fff31aa8ae7 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (*)(bmalloc::Scavenger*), bmalloc::Scavenger*> >(void*) + 39
+6   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+7   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 13:: com.apple.CFStream.LegacyThread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff203cb49a _legacyStreamRunLoop_workThread + 251
+6   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+7   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 14:: com.squareup.SocketRocket.NetworkThread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.Foundation          	0x00007fff20846e61 -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 209
+6   org.reactjs.native.example.MapboxHeatmapExample	0x00000001014fbcbf -[_RCTSRRunLoopThread main] + 383 (RCTSRWebSocket.m:1620)
+7   com.apple.Foundation          	0x00007fff2086f521 __NSThread__start__ + 1042
+8   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+9   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 15:: com.apple.NSURLConnectionLoader
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.CFNetwork           	0x00007fff23726b52 0x7fff234fc000 + 2272082
+6   com.apple.Foundation          	0x00007fff2086f521 __NSThread__start__ + 1042
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 16:: com.apple.CFSocket.private
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x000000010579263c ???
+2   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+3   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 17:: com.mapbox.mbgl.AssetFileSource
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff203a2cf1 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010beba72f mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()::operator()() + 239 (thread.hpp:64)
+7   com.mapbox.Mapbox             	0x000000010beba580 decltype(std::__1::forward<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(fp)(std::__1::forward<mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()>(fp0)...)) std::__1::__invoke<mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()>(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()&&...) + 8 (type_traits:4361) [inlined]
+8   com.mapbox.Mapbox             	0x000000010beba580 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()>(std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()>&, std::__1::__tuple_indices<>) + 12 (thread:342) [inlined]
+9   com.mapbox.Mapbox             	0x000000010beba580 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::AssetFileSource::Impl>::Thread<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&>(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)::'lambda'()> >(void*) + 48 (thread:352)
+10  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+11  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 18:: com.mapbox.mbgl.OnlineFileSource
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff203a2cf1 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010bee734f mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()::operator()() + 143 (thread.hpp:64)
+7   com.mapbox.Mapbox             	0x000000010bee7210 decltype(std::__1::forward<std::__1::tuple<> >(fp)(std::__1::forward<mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>(fp0)...)) std::__1::__invoke<mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>(std::__1::tuple<>&&, mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()&&...) + 8 (type_traits:4361) [inlined]
+8   com.mapbox.Mapbox             	0x000000010bee7210 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>(std::__1::tuple<std::__1::tuple<>, mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>&, std::__1::__tuple_indices<>) + 12 (thread:342) [inlined]
+9   com.mapbox.Mapbox             	0x000000010bee7210 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::OnlineFileSourceThread>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()> >(void*) + 48 (thread:352)
+10  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+11  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 19:: com.mapbox.mbgl.DatabaseFileSource
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff203a2cf1 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010bec02f4 mbgl::util::Thread<mbgl::DatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()::operator()() + 132 (thread.hpp:64)
+7   com.mapbox.Mapbox             	0x000000010bec022a decltype(std::__1::forward<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(fp)(std::__1::forward<mbgl::util::Thread<mbgl::DatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()>(fp0)...)) std::__1::__invoke<mbgl::util::Thread<mbgl::DatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()>(std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&, mbgl::util::Thread<mbgl::DatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()&&...) + 5 (type_traits:4361) [inlined]
+8   com.mapbox.Mapbox             	0x000000010bec022a void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::DatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()>(std::__1::tuple<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, mbgl::util::Thread<mbgl::DatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()>&, std::__1::__tuple_indices<>) + 9 (thread:342) [inlined]
+9   com.mapbox.Mapbox             	0x000000010bec022a void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::DatabaseFileSourceThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&&)::'lambda'()> >(void*) + 42 (thread:352)
+10  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+11  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 20:: com.mapbox.mbgl.LocalFileSource
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x0000000103bc677c ???
+2   com.apple.CoreFoundation      	0x00007fff203a7e77 __CFRunLoopServiceMachPort + 316
+3   com.apple.CoreFoundation      	0x00007fff203a258d __CFRunLoopRun + 1284
+4   com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+5   com.apple.CoreFoundation      	0x00007fff203a2cf1 CFRunLoopRun + 40
+6   com.mapbox.Mapbox             	0x000000010bec6880 mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()::operator()() + 144 (thread.hpp:64)
+7   com.mapbox.Mapbox             	0x000000010bec6740 decltype(std::__1::forward<std::__1::tuple<> >(fp)(std::__1::forward<mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>(fp0)...)) std::__1::__invoke<mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>(std::__1::tuple<>&&, mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()&&...) + 8 (type_traits:4361) [inlined]
+8   com.mapbox.Mapbox             	0x000000010bec6740 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>(std::__1::tuple<std::__1::tuple<>, mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()>&, std::__1::__tuple_indices<>) + 12 (thread:342) [inlined]
+9   com.mapbox.Mapbox             	0x000000010bec6740 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::LocalFileSource::Impl>::Thread<std::__1::tuple<> >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<>&&)::'lambda'()> >(void*) + 48 (thread:352)
+10  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+11  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 21:: com.mapbox.mbgl.ResourceLoaderThread
+0   ???                           	0x00007ffdffcd8990 ???
+1   <translation info unavailable>	0x0000000107fcc4c0 ???
+2   com.mapbox.Mapbox             	0x000000010bebb655 std::__1::__unique_if<mbgl::FileSourceRequest>::__unique_single std::__1::make_unique<mbgl::FileSourceRequest, std::__1::function<void (mbgl::Response)> >(std::__1::function<void (mbgl::Response)>&&) + 24 (memory:3132) [inlined]
+3   com.mapbox.Mapbox             	0x000000010bebb655 mbgl::DatabaseFileSource::request(mbgl::Resource const&, std::__1::function<void (mbgl::Response)>) + 53 (database_file_source.cpp:177)
+4   com.mapbox.Mapbox             	0x000000010bec810b mbgl::MainResourceLoaderThread::request(mbgl::AsyncRequest*, mbgl::Resource const&, mbgl::ActorRef<mbgl::FileSourceRequest> const&) + 715 (main_resource_loader.cpp:72)
+5   com.mapbox.Mapbox             	0x000000010beedcf2 mbgl::Mailbox::receive() + 370 (mailbox.cpp:86)
+6   com.mapbox.Mapbox             	0x000000010beedf6d mbgl::Mailbox::maybeReceive(std::__1::weak_ptr<mbgl::Mailbox> const&) + 45 (mailbox.cpp:96)
+7   com.mapbox.Mapbox             	0x000000010beb04a2 std::__1::__function::__value_func<void ()>::operator()() const + 18 (functional:1799) [inlined]
+8   com.mapbox.Mapbox             	0x000000010beb04a2 std::__1::function<void ()>::operator()() const + 18 (functional:2347) [inlined]
+9   com.mapbox.Mapbox             	0x000000010beb04a2 void mbgl::WorkTaskImpl<std::__1::function<void ()>, std::__1::tuple<> >::invoke<>(std::__1::integer_sequence<unsigned long>) + 18 (work_task_impl.hpp:43) [inlined]
+10  com.mapbox.Mapbox             	0x000000010beb04a2 mbgl::WorkTaskImpl<std::__1::function<void ()>, std::__1::tuple<> >::operator()() + 50 (work_task_impl.hpp:23)
+11  com.mapbox.Mapbox             	0x000000010beaf782 mbgl::util::RunLoop::process() + 466 (run_loop.hpp:125)
+12  com.apple.CoreFoundation      	0x00007fff203a8845 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+13  com.apple.CoreFoundation      	0x00007fff203a873d __CFRunLoopDoSource0 + 180
+14  com.apple.CoreFoundation      	0x00007fff203a7c1f __CFRunLoopDoSources0 + 248
+15  com.apple.CoreFoundation      	0x00007fff203a23f7 __CFRunLoopRun + 878
+16  com.apple.CoreFoundation      	0x00007fff203a1b9e CFRunLoopRunSpecific + 567
+17  com.apple.CoreFoundation      	0x00007fff203a2cf1 CFRunLoopRun + 40
+18  com.mapbox.Mapbox             	0x000000010becbcee mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()::operator()() + 254 (thread.hpp:64)
+19  com.mapbox.Mapbox             	0x000000010becbb60 decltype(std::__1::forward<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(fp)(std::__1::forward<mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()>(fp0)...)) std::__1::__invoke<mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()>(std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&, mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()&&...) + 8 (type_traits:4361) [inlined]
+20  com.mapbox.Mapbox             	0x000000010becbb60 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()>(std::__1::tuple<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >, mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()>&, std::__1::__tuple_indices<>) + 12 (thread:342) [inlined]
+21  com.mapbox.Mapbox             	0x000000010becbb60 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::util::Thread<mbgl::MainResourceLoaderThread>::Thread<std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> > >(std::__1::function<void ()>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::tuple<std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource>, std::__1::shared_ptr<mbgl::FileSource> >&&)::'lambda'()> >(void*) + 48 (thread:352)
+22  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+23  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 22:: JIT Worklist Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 23:: Heap Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 24:: Heap Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 25:: Heap Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 26:: Heap Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 27:: Heap Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 28:: Heap Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 29:: Heap Helper Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 30:: DFG Worklist Worker Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 31:: DFG Worklist Worker Thread
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   com.apple.JavaScriptCore      	0x00007fff31a25d96 WTF::ParkingLot::parkConditionallyImpl(void const*, WTF::ScopedLambda<bool ()> const&, WTF::ScopedLambda<void ()> const&, WTF::TimeWithDynamicClockType const&) + 3638
+3   com.apple.JavaScriptCore      	0x00007fff3124b6aa bool WTF::Condition::waitUntil<WTF::Lock>(WTF::Lock&, WTF::TimeWithDynamicClockType const&) + 154
+4   com.apple.JavaScriptCore      	0x00007fff319f2562 WTF::Detail::CallableWrapper<WTF::AutomaticThread::start(WTF::AbstractLocker const&)::$_0, void>::call() + 322
+5   com.apple.JavaScriptCore      	0x00007fff31a4d067 WTF::Thread::entryPoint(WTF::Thread::NewThreadContext*) + 295
+6   com.apple.JavaScriptCore      	0x00007fff31a4fdd9 WTF::wtfThreadEntryPoint(void*) + 9
+7   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+8   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 32:
+0   ???                           	0x00007ffdffd30914 ???
+
+Thread 33:
+0   ???                           	0x00007ffdffd30914 ???
+
+Thread 34:: com.mapbox.mbgl.Worker 1
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   libc++.1.dylib                	0x00007fff2029de02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::condition_variable::wait<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()>(std::__1::unique_lock<std::__1::mutex>&, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()) + 23 (__mutex_base:375) [inlined]
+4   com.mapbox.Mapbox             	0x000000010c1fe08b mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const + 484 (thread_pool.cpp:34) [inlined]
+5   com.mapbox.Mapbox             	0x000000010c1fe08b decltype(std::__1::forward<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(fp)()) std::__1::__invoke<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0&&) + 484 (type_traits:4361) [inlined]
+6   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>&, std::__1::__tuple_indices<>) + 484 (thread:342) [inlined]
+7   com.mapbox.Mapbox             	0x000000010c1fe08b void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0> >(void*) + 555 (thread:352)
+8   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+9   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 35:: com.mapbox.mbgl.Worker 2
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   libc++.1.dylib                	0x00007fff2029de02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::condition_variable::wait<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()>(std::__1::unique_lock<std::__1::mutex>&, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()) + 23 (__mutex_base:375) [inlined]
+4   com.mapbox.Mapbox             	0x000000010c1fe08b mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const + 484 (thread_pool.cpp:34) [inlined]
+5   com.mapbox.Mapbox             	0x000000010c1fe08b decltype(std::__1::forward<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(fp)()) std::__1::__invoke<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0&&) + 484 (type_traits:4361) [inlined]
+6   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>&, std::__1::__tuple_indices<>) + 484 (thread:342) [inlined]
+7   com.mapbox.Mapbox             	0x000000010c1fe08b void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0> >(void*) + 555 (thread:352)
+8   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+9   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 36:: com.mapbox.mbgl.Worker 3
+0   <translation info unavailable>	0x0000000103bc7614 ???
+1   <translation info unavailable>	0x0000000107d23c28 ???
+2   com.mapbox.Mapbox             	0x000000010c02fbca mbgl::parseSprite(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) + 2298 (sprite_parser.cpp:186)
+3   com.mapbox.Mapbox             	0x000000010c02e33f mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2::operator()() const + 16 (sprite_loader.cpp:88) [inlined]
+4   com.mapbox.Mapbox             	0x000000010c02e33f void mbgl::Scheduler::scheduleAndReplyValue<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2 const&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3 const&, mapbox::base::WeakPtr<mbgl::Scheduler>)::'lambda'()::operator()() const + 298 (scheduler.hpp:97) [inlined]
+5   com.mapbox.Mapbox             	0x000000010c02e33f decltype(std::__1::forward<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2>(fp)(std::__1::forward<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(fp0)...)) std::__1::__invoke<void mbgl::Scheduler::scheduleAndReplyValue<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2 const&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3 const&, mapbox::base::WeakPtr<mbgl::Scheduler>)::'lambda'()&>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2&&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3&&...) + 298 (type_traits:4361) [inlined]
+6   com.mapbox.Mapbox             	0x000000010c02e33f void std::__1::__invoke_void_return_wrapper<void>::__call<void mbgl::Scheduler::scheduleAndReplyValue<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2 const&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3 const&, mapbox::base::WeakPtr<mbgl::Scheduler>)::'lambda'()&>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2&&...) + 298 (__functional_base:349) [inlined]
+7   com.mapbox.Mapbox             	0x000000010c02e33f std::__1::__function::__alloc_func<void mbgl::Scheduler::scheduleAndReplyValue<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2 const&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3 const&, mapbox::base::WeakPtr<mbgl::Scheduler>)::'lambda'(), std::__1::allocator<void mbgl::Scheduler::scheduleAndReplyValue<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2 const&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3 const&, mapbox::base::WeakPtr<mbgl::Scheduler>)::'lambda'()>, void ()>::operator()() + 298 (functional:1527) [inlined]
+8   com.mapbox.Mapbox             	0x000000010c02e33f std::__1::__function::__func<void mbgl::Scheduler::scheduleAndReplyValue<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2 const&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3 const&, mapbox::base::WeakPtr<mbgl::Scheduler>)::'lambda'(), std::__1::allocator<void mbgl::Scheduler::scheduleAndReplyValue<mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3>(mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_2 const&, mbgl::SpriteLoader::emitSpriteLoadedIfComplete()::$_3 const&, mapbox::base::WeakPtr<mbgl::Scheduler>)::'lambda'()>, void ()>::operator()() + 335 (functional:1651)
+9   com.mapbox.Mapbox             	0x000000010c1fe200 std::__1::__function::__value_func<void ()>::operator()() const + 6 (functional:1799) [inlined]
+10  com.mapbox.Mapbox             	0x000000010c1fe200 std::__1::function<void ()>::operator()() const + 6 (functional:2347) [inlined]
+11  com.mapbox.Mapbox             	0x000000010c1fe200 mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const + 857 (thread_pool.cpp:44) [inlined]
+12  com.mapbox.Mapbox             	0x000000010c1fe200 decltype(std::__1::forward<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(fp)()) std::__1::__invoke<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0&&) + 857 (type_traits:4361) [inlined]
+13  com.mapbox.Mapbox             	0x000000010c1fe200 void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>&, std::__1::__tuple_indices<>) + 857 (thread:342) [inlined]
+14  com.mapbox.Mapbox             	0x000000010c1fe200 void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0> >(void*) + 928 (thread:352)
+15  libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+16  libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 37:: com.mapbox.mbgl.Worker 4
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   libc++.1.dylib                	0x00007fff2029de02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::condition_variable::wait<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()>(std::__1::unique_lock<std::__1::mutex>&, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()) + 23 (__mutex_base:375) [inlined]
+4   com.mapbox.Mapbox             	0x000000010c1fe08b mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const + 484 (thread_pool.cpp:34) [inlined]
+5   com.mapbox.Mapbox             	0x000000010c1fe08b decltype(std::__1::forward<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(fp)()) std::__1::__invoke<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0&&) + 484 (type_traits:4361) [inlined]
+6   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>&, std::__1::__tuple_indices<>) + 484 (thread:342) [inlined]
+7   com.mapbox.Mapbox             	0x000000010c1fe08b void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0> >(void*) + 555 (thread:352)
+8   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+9   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 38:: com.mapbox.mbgl.Worker 1
+0   ???                           	0x0000000103b43a30 ???
+1   <translation info unavailable>	0x00000001047a1178 ???
+2   libc++.1.dylib                	0x00007fff2029de02 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::condition_variable::wait<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()>(std::__1::unique_lock<std::__1::mutex>&, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const::'lambda'()) + 23 (__mutex_base:375) [inlined]
+4   com.mapbox.Mapbox             	0x000000010c1fe08b mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0::operator()() const + 484 (thread_pool.cpp:34) [inlined]
+5   com.mapbox.Mapbox             	0x000000010c1fe08b decltype(std::__1::forward<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(fp)()) std::__1::__invoke<mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0&&) + 484 (type_traits:4361) [inlined]
+6   com.mapbox.Mapbox             	0x000000010c1fe08b void std::__1::__thread_execute<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>(std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0>&, std::__1::__tuple_indices<>) + 484 (thread:342) [inlined]
+7   com.mapbox.Mapbox             	0x000000010c1fe08b void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, mbgl::ThreadedSchedulerBase::makeSchedulerThread(unsigned long)::$_0> >(void*) + 555 (thread:352)
+8   libsystem_pthread.dylib       	0x00007fff5dfac950 _pthread_start + 224
+9   libsystem_pthread.dylib       	0x00007fff5dfa847b thread_start + 15
+
+Thread 0 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000000000000  rbx: 0x0000000203e83e00  rcx: 0x0000000000000000  rdx: 0x0000000000000000
+  rdi: 0x0000000308dc3080  rsi: 0x0000000000000003  rbp: 0x0000000308dc2f70  rsp: 0x0000000308dc2da0
+   r8: 0x0000000308dc2f20   r9: 0x0000000308dc2f70  r10: 0x0000000203e83e00  r11: 0xffffffffffffffff
+  r12: 0x0000000000000203  r13: 0x0000003000000008  r14: 0x0000000000000006  r15: 0x0000000000000016
+  rip: <unavailable>  rfl: 0x0000000000000283
+
+
+Binary Images:
+       0x100f01000 -        0x101a38fff +org.reactjs.native.example.MapboxHeatmapExample (1.0 - 1) <11EE56FC-A681-3E5E-96A0-0574C60C3FDC> /Users/USER/Library/Developer/CoreSimulator/Devices/30BC1132-CD28-48F6-9734-DB578F778314/data/Containers/Bundle/Application/92AF9333-E4BD-4053-9CA2-FECC5762B250/MapboxHeatmapExample.app/MapboxHeatmapExample
+       0x10bd5f000 -        0x10bdb7fff +dyld_sim (828.5) <C0AB2891-0E84-3F48-9A45-C079C2864222> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/dyld_sim
+       0x10bea7000 -        0x10c3b7fff +com.mapbox.Mapbox (5.9.0 - 15256) <9784EB86-D857-369D-A2D0-75D64F859512> /Users/USER/Library/Developer/CoreSimulator/Devices/30BC1132-CD28-48F6-9734-DB578F778314/data/Containers/Bundle/Application/92AF9333-E4BD-4053-9CA2-FECC5762B250/MapboxHeatmapExample.app/Frameworks/Mapbox.framework/Mapbox
+       0x10c93d000 -        0x10c965fff +com.mapbox.MapboxMobileEvents (0.10.2 - 1) <FF4D37C4-192C-3CA9-BC2A-1DFABA9BA232> /Users/USER/Library/Developer/CoreSimulator/Devices/30BC1132-CD28-48F6-9734-DB578F778314/data/Containers/Bundle/Application/92AF9333-E4BD-4053-9CA2-FECC5762B250/MapboxHeatmapExample.app/Frameworks/MapboxMobileEvents.framework/MapboxMobileEvents
+       0x10c9a1000 -        0x10cd86fff +libswiftCore.dylib (5.3 - 1200.2.26.4) <7058F87E-F5AB-3A8B-B8DF-30DF9EDF87AB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftCore.dylib
+       0x10d0b8000 -        0x10d0b8fff +libswiftCoreFoundation.dylib (1.6) <395EE886-952D-3AE3-B9FA-B42BBA82B077> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftCoreFoundation.dylib
+       0x10d0c1000 -        0x10d0cbfff +libswiftCoreGraphics.dylib (2) <21CE94E5-1802-3D8D-A16F-B653A664F79C> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftCoreGraphics.dylib
+       0x10d0ef000 -        0x10d0effff +libswiftCoreImage.dylib (1) <026F0279-DC8A-3918-AFEB-C0A6232B7FF1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftCoreImage.dylib
+       0x10d0f7000 -        0x10d0fdfff +libswiftDarwin.dylib (??? - ???) <BC3F2DB3-A7BA-3120-85C4-C98A1BDDD039> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftDarwin.dylib
+       0x10d111000 -        0x10d126fff +libswiftDispatch.dylib (4) <5CE3D7E1-B365-3193-9B9A-6371D251A0C3> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftDispatch.dylib
+       0x10d16e000 -        0x10d2defff +libswiftFoundation.dylib (13.100) <32E87E4B-5A28-35D2-888C-588B1B8BD593> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftFoundation.dylib
+       0x10d4b2000 -        0x10d4b6fff +libswiftMetal.dylib (1.3.1) <E471FF63-6C54-3E85-BBF0-2742AD1E66EE> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftMetal.dylib
+       0x10d4c7000 -        0x10d4c8fff +libswiftObjectiveC.dylib (1) <D61D0CA3-8F66-3C8F-B552-B9D4EE438921> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftObjectiveC.dylib
+       0x10d4d6000 -        0x10d4d7fff +libswiftQuartzCore.dylib (1) <D25D5DF9-5AE3-333B-920F-115BD9D76600> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftQuartzCore.dylib
+       0x10d4e1000 -        0x10d521fff +libswiftUIKit.dylib (16) <EC03829B-ED7F-357E-A80B-1CD8835F6CC7> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/swift/libswiftUIKit.dylib
+       0x10f89d000 -        0x10f8a9fff +libobjc-trampolines.dylib (818) <1BBF7B4A-A554-356A-AF42-0D893CEACDD1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libobjc-trampolines.dylib
+       0x110707000 -        0x1107ecfff +GLEngine (18.0.31) <6807AEF7-E69E-3966-A7A8-9B29C5E5E57E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/GLEngine.bundle/GLEngine
+       0x11081f000 -        0x110846fff +GLRendererFloat (18.0.31) <FFF2FBB6-28C7-39FE-B37F-A238E947F31A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/GLRendererFloat.bundle/GLRendererFloat
+       0x203dac000 -        0x203e47fff  dyld (832.7.1) <DEA51514-B4E8-3368-979B-89D0F8397ABC> /usr/lib/dyld
+    0x7fff20035000 -     0x7fff2004afff +libsystem_trace.dylib (1277.0.9) <8EBB37F2-6ECA-30B8-BD2E-EAA26150A21B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_trace.dylib
+    0x7fff2004b000 -     0x7fff2007dfff +libxpc.dylib (2038.0.15) <5B766255-3DAE-3096-A090-3974BE256194> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libxpc.dylib
+    0x7fff2007e000 -     0x7fff2007ffff +libsystem_blocks.dylib (78) <94AE3CD7-9EA1-3BDA-8B71-740DD76109D6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_blocks.dylib
+    0x7fff20080000 -     0x7fff20102fff +libsystem_c.dylib (1439.0.3) <81EF6166-64BE-38B5-A10D-41E8B1280B74> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_c.dylib
+    0x7fff20103000 -     0x7fff20146fff +libdispatch.dylib (1271.0.4) <8CB0A417-48E2-3A67-9B93-3930705EC30E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libdispatch.dylib
+    0x7fff20147000 -     0x7fff20171fff +libsystem_malloc.dylib (317.0.1) <5AFFD379-4770-3E70-A6B1-D9385E3831C2> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_malloc.dylib
+    0x7fff20172000 -     0x7fff201a3fff +libobjc.A.dylib (818) <B1855A17-9730-36C0-8E94-3F428DC28C88> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libobjc.A.dylib
+    0x7fff201a4000 -     0x7fff2023ffff +libcorecrypto.dylib (1000.0.5) <516F1B2A-3762-3A87-9215-BED0CE878161> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libcorecrypto.dylib
+    0x7fff20240000 -     0x7fff20255fff +libc++abi.dylib (904.4) <BEC2C537-52DD-3DA9-8857-F92A99B381BF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libc++abi.dylib
+    0x7fff20256000 -     0x7fff2028cfff +libdyld.dylib (828.5) <5BD6D5EC-1AEB-3CC9-AA5E-5E1DB4AC2A49> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libdyld.dylib
+    0x7fff2028d000 -     0x7fff20294fff +libsystem_darwin.dylib (1439.0.3) <83E822C2-0E09-3728-8ECB-41ED3C68E407> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_darwin.dylib
+    0x7fff20295000 -     0x7fff202e7fff +libc++.1.dylib (904.4) <1A1EE805-BA68-31FB-9374-45999536C65A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libc++.1.dylib
+    0x7fff202e8000 -     0x7fff20328fff +libsystem_info.dylib (542.0.1) <D1C43C01-FE21-3B2C-8CF8-9005D343D6C0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_info.dylib
+    0x7fff20329000 -     0x7fff206c3fff  com.apple.CoreFoundation (6.9 - 1751.108) <2DD77836-A51E-369D-AFB9-167069F42530> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+    0x7fff206c4000 -     0x7fff20731fff  com.apple.SystemConfiguration (1.20 - 1.20) <8C94CA30-935C-31D6-9066-C5CF9BF0AEF5> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+    0x7fff20732000 -     0x7fff209d6fff  com.apple.Foundation (6.9 - 1751.108) <905DEB63-411B-336E-B5FD-963E8F34079F> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Foundation.framework/Foundation
+    0x7fff209d7000 -     0x7fff20a05fff +libCRFSuite.dylib (50) <793456A7-18A3-3C08-BDC8-3EC664E69124> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libCRFSuite.dylib
+    0x7fff20a06000 -     0x7fff20b9dfff  com.apple.CoreServices (839 - 839) <11F52E90-2024-31DE-A41E-F8BE16C47CA2> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreServices.framework/CoreServices
+    0x7fff20b9e000 -     0x7fff20c0cfff +libSparse.dylib (106) <66BEF29D-4CDD-32DF-A451-D06457ED82C6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib
+    0x7fff20c0d000 -     0x7fff20f89fff  com.apple.ImageIO (3.3.0 - 2125) <96593391-64DC-32EA-871A-DE45C36AA1AB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/ImageIO.framework/ImageIO
+    0x7fff20f8a000 -     0x7fff20f8cfff  com.apple.ConstantClasses (1.0 - 1) <9113A1C2-7186-3171-A1C7-20D6D36F8BD6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses
+    0x7fff20f8d000 -     0x7fff2115dfff  com.apple.CoreText (677 - 677) <A0B6EC6D-B92E-3088-93CB-A3330EE15401> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreText.framework/CoreText
+    0x7fff2115e000 -     0x7fff21290fff  com.apple.Security (10.0 - 59754.11.1) <0EF10E87-9AC2-373C-B70E-E1AA1397E4F8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Security.framework/Security
+    0x7fff21291000 -     0x7fff21314fff  com.apple.framework.IOKit (2.0.2 - 1845.0.1) <038C0700-7ED3-3FDA-BDB5-321CE9D816AA> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+    0x7fff21315000 -     0x7fff2133afff +libMobileGestalt.dylib (978.11.1) <5B540FC5-102E-3888-B5CB-F25A5572EA9B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libMobileGestalt.dylib
+    0x7fff2133b000 -     0x7fff21398fff +libprotobuf.dylib (3696) <5508803F-2712-34A6-8420-D4F423D41560> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libprotobuf.dylib
+    0x7fff21399000 -     0x7fff213a9fff +libprotobuf-lite.dylib (3696) <CDE74A5A-01FD-3A5B-A85D-36A8B68554E0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libprotobuf-lite.dylib
+    0x7fff213aa000 -     0x7fff21605fff +libicucore.A.dylib (66102) <FFA97F95-4FD1-33B0-9B76-35E3C7E2614A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libicucore.A.dylib
+    0x7fff21606000 -     0x7fff21635fff  com.apple.CoreServicesInternal (474.1 - 474.1) <EDEC1598-7AAE-3B20-AFD5-A028A3155088> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal
+    0x7fff21636000 -     0x7fff21678fff  com.apple.awd (1.0 - 950) <EC152437-ABD2-3F00-99E6-9C76F7B6B285> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics
+    0x7fff21679000 -     0x7fff216abfff +libAWDSupport.dylib (950) <679786D4-C9C5-305F-A655-2C2A5800D333> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libAWDSupport.dylib
+    0x7fff216ac000 -     0x7fff21768fff  com.apple.audio.CoreAudio (5.0 - 5.0) <3BF9EF0F-9D82-3971-AA24-0B1CA7AC583E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+    0x7fff21769000 -     0x7fff21aaefff  com.apple.CoreImage (13.0.0 - 1110) <9B930436-FF15-31F0-B920-5BECC40FA7A1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreImage.framework/CoreImage
+    0x7fff21aaf000 -     0x7fff21b9dfff  com.apple.LanguageModeling (1.0 - 246) <D8638463-3296-39BA-815A-7525389D1124> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/LanguageModeling.framework/LanguageModeling
+    0x7fff21b9e000 -     0x7fff21bebfff  com.apple.Lexicon-framework (1.0 - 86) <EE5AE39D-C938-382C-B175-EA103344760F> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Lexicon.framework/Lexicon
+    0x7fff21bec000 -     0x7fff21d83fff +libsqlite3.dylib (321) <0D0EAC89-B26B-38AB-8CC8-4FABF6F64DAF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libsqlite3.dylib
+    0x7fff21d84000 -     0x7fff21d8dfff +libsystem_notify.dylib (279.0.2) <EA84AC20-C7D2-34B8-B989-E7D6002EE312> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_notify.dylib
+    0x7fff21f7c000 -     0x7fff2210efff  com.apple.Montreal (1.0 - 142) <D9BE843B-7E66-388D-8224-6D04FF9975CB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Montreal.framework/Montreal
+    0x7fff22223000 -     0x7fff2225ffff  com.apple.AppSupport (1.0.0 - 29) <13BF3331-F152-3810-B414-7C8394C07319> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AppSupport.framework/AppSupport
+    0x7fff22260000 -     0x7fff227c5fff +libnetwork.dylib (2288.0.26) <691C4839-9CBD-38C2-ACD1-566187535782> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libnetwork.dylib
+    0x7fff227c6000 -     0x7fff228e4fff  com.apple.managedconfiguration (1.0 - 1.0) <3E267ED4-1B70-3503-96FF-87E81F313344> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration
+    0x7fff228e5000 -     0x7fff2291dfff  com.apple.CSStore (1116.2.2 - 1116.2.2) <0A9EE9A4-685C-3467-A696-E2A04FA6AD08> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreServicesStore.framework/CoreServicesStore
+    0x7fff2291e000 -     0x7fff22937fff  com.apple.UserManagement (1.0 - 1) <ED2A1658-90B1-3BFB-9B51-5C37FEA116B0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UserManagement.framework/UserManagement
+    0x7fff22938000 -     0x7fff22cdafff  com.apple.CoreML (1.0 - 1) <45DA1DC2-EE9A-3C54-BA34-93527A38D2F7> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreML.framework/CoreML
+    0x7fff22cdb000 -     0x7fff22cf1fff  com.apple.ProtocolBuffer (1 - 285.30.8.8.1) <B728E66F-E984-329A-BA9B-A8A7C52C5BD7> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
+    0x7fff22cf2000 -     0x7fff22d08fff  com.apple.commonutilities (8.0 - 900) <B0EAA1FE-FF28-3858-A7E1-373F011E1FD0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities
+    0x7fff22d09000 -     0x7fff22d50fff  com.apple.RunningBoardServices (1.0 - 505.0.12) <6F90805C-3245-3499-94F1-74A27DC2F780> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices
+    0x7fff22d51000 -     0x7fff22dcffff  com.apple.BaseBoard (522 - 522) <BBF38E7D-FF8B-3BE8-839D-86FDE7463925> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard
+    0x7fff233e9000 -     0x7fff23462fff  com.apple.corelocation (2420.4.7 - 2420.4.7) <CEED4310-1938-3E29-92B9-8EF10ADF26DC> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+    0x7fff2346c000 -     0x7fff234ddfff  com.apple.Accounts (113 - 113) <F862F87D-530D-3437-B5F6-86E5865E7BDB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accounts.framework/Accounts
+    0x7fff234fc000 -     0x7fff23971fff  com.apple.CFNetwork (1197 - 1197) <E05B29BD-8D28-3E66-A7BB-B71CB1911898> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+    0x7fff23972000 -     0x7fff23a82fff  com.apple.UIFoundation (1.0 - 717) <A5CD52C1-D885-35F8-8BB1-38EFD4366BA2> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+    0x7fff23a83000 -     0x7fff24f3ffff  com.apple.UIKitCore (1.0 - 3987.9) <CF8C062B-079E-3DA6-BFE2-3366C11A1F29> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+    0x7fff24f40000 -     0x7fff24f4efff  com.apple.AssertionServices (1.0 - 505.0.12) <0160A413-1BD9-3325-AD4B-4E34B45DB3CA> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices
+    0x7fff24f4f000 -     0x7fff25038fff  com.apple.CoreTelephony (113 - 8159.2) <C063D404-AEBC-3A56-805D-3093A00BCB20> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony
+    0x7fff25039000 -     0x7fff2503dfff  com.apple.AggregateDictionary (1.0 - 1) <7E6E1564-ADF4-3208-868E-352F7F847AC9> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary
+    0x7fff2503e000 -     0x7fff25054fff +libsystem_asl.dylib (385) <2F8C98B3-F73A-3EA4-9F4E-C02C6E21EA41> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_asl.dylib
+    0x7fff250d2000 -     0x7fff25461fff +CoreData (1041) <AD77D249-A02E-3B4D-9042-DD95DE3E6813> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreData.framework/CoreData
+    0x7fff2576a000 -     0x7fff25792fff  com.apple.BoardServices (1.0 - 522) <149C60B4-F914-3AF6-9469-94355446948B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/BoardServices.framework/BoardServices
+    0x7fff25793000 -     0x7fff2584cfff +libboringssl.dylib (351.0.1) <45FD838E-936F-340E-A8CF-ACDB316D56C0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libboringssl.dylib
+    0x7fff2584d000 -     0x7fff2586efff  com.apple.analyticsd (1.0 - 1) <6B7D03C2-251A-354B-BA0C-3D65330F198A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics
+    0x7fff2586f000 -     0x7fff25a0cfff  com.apple.cloudkit.CloudKit (950 - 950) <14D4C24B-57F7-3534-91B6-6D3B57D0B410> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CloudKit.framework/CloudKit
+    0x7fff25a0d000 -     0x7fff25a61fff  com.apple.SpringBoardServices (1.0 - 1.0) <0CC54028-A175-36E7-A871-58E159951295> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices
+    0x7fff25a62000 -     0x7fff25adffff  com.apple.FrontBoardServices (698.1 - 698.1) <5BE29083-D779-3E22-95DA-4E00B704318E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices
+    0x7fff25ae0000 -     0x7fff25b7bfff  com.apple.Network (1.0 - 1) <1DC67F60-2B43-343E-AFE2-8FBD09622866> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Network.framework/Network
+    0x7fff25b7c000 -     0x7fff25bdffff +libusrtcp.dylib (2288.0.26) <8855D241-77BA-3DC4-B5CF-83BFF7850F41> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libusrtcp.dylib
+    0x7fff25be0000 -     0x7fff270c5fff  com.apple.GeoServices (1.0 - 1757.30.8.12.9) <5C6DF0CE-F951-3BBF-99A0-CCBAB92F80B1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices
+    0x7fff270c6000 -     0x7fff270d5fff  com.apple.TCC (1.0 - 1) <46033747-958D-3474-8B50-3B846CA97E00> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TCC.framework/TCC
+    0x7fff27135000 -     0x7fff272c8fff  com.apple.CoreUtils (6.3 - 630.77) <5A362784-5690-3F72-BC0C-59A2EE562016> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils
+    0x7fff273b2000 -     0x7fff273c0fff +libsystem_containermanager.dylib (318) <4E4B9CA0-E69A-31F6-A45E-0B26462D0319> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_containermanager.dylib
+    0x7fff274e0000 -     0x7fff274fcfff  com.apple.aps.framework (4.0 - 4.0) <B5EE181A-E5B8-316C-9ABF-383A369DA84C> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService
+    0x7fff277c2000 -     0x7fff2787dfff  com.apple.CoreMedia (1.0 - 2753.1.9) <947CAE96-2923-3B51-BD2E-15E037F0F7C2> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+    0x7fff2787e000 -     0x7fff27892fff  com.apple.UIKitServices (1.0 - 1) <E10AABC3-E47B-3E15-BE1D-16AF267722F5> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices
+    0x7fff27893000 -     0x7fff278f5fff  com.apple.BackBoardServices (1.0 - 1.0) <2B9F2BAC-6E60-362E-81A9-4EBBD0593ACE> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices
+    0x7fff278f6000 -     0x7fff27b5bfff  com.apple.QuartzCore (1.11 - 917.0.4) <044D1B88-9957-3059-AEFE-A13AE1C013C3> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+    0x7fff27b5c000 -     0x7fff27c1afff  com.apple.ColorSync (4.13.0 - 3465.1) <78B1695F-970C-3E3D-ABD0-D864F285C421> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ColorSync.framework/ColorSync
+    0x7fff27c1b000 -     0x7fff28272fff  com.apple.CoreGraphics (2.0 - 1455) <E31089E0-FC31-3ED5-8AC1-1EC27839D0DC> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+    0x7fff283b6000 -     0x7fff283e5fff  com.apple.UserNotifications (1.0 - 346) <0B39CF44-C52C-3C98-9BF9-BACB5986773A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/UserNotifications.framework/UserNotifications
+    0x7fff283e6000 -     0x7fff28409fff  com.apple.locationsupport (2420.4.7 - 2420.4.7) <632D88CA-0B02-3CEF-BC92-AD8643E0D510> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport
+    0x7fff2855c000 -     0x7fff28cd8fff  com.apple.WebKit (8610 - 8610.1.28.10.1) <7EE8607B-E0D0-3438-A321-46C8BB3D08C0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/WebKit.framework/WebKit
+    0x7fff28cd9000 -     0x7fff2b1e5fff  com.apple.WebCore (8610 - 8610.1.28.10.1) <4276E323-CC1B-3234-A869-2AA9527C9A2D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebCore.framework/WebCore
+    0x7fff2b1e6000 -     0x7fff2b200fff +libAccessibility.dylib (2876.3) <392A6C9D-C12B-3327-A9A3-C5625E650F94> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libAccessibility.dylib
+    0x7fff2b201000 -     0x7fff2b20ffff  com.apple.accessibility.AXCoreUtilities (1.0 - 1) <AFAAB1F1-741F-3917-AAA3-335D2DAA9DB9> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities
+    0x7fff2b293000 -     0x7fff2b29ffff  com.apple.IOSurface (289.2 - 289.2) <B5410F29-8459-3F67-941F-87B953E23CF2> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/IOSurface.framework/IOSurface
+    0x7fff2b2a0000 -     0x7fff2b78ffff  com.apple.MediaToolbox (1.0 - 2753.1.9) <D26DE2B5-B7B1-3A26-8060-C701DFFF9E38> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox
+    0x7fff2b790000 -     0x7fff2b798fff  com.apple.GraphicsServices (1.0 - 1.0) <7E9E7A88-4901-336E-96BE-E56BDDC62574> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+    0x7fff2b8d0000 -     0x7fff2b8f4fff  com.apple.MobileAssets (1.0 - 659.0.3) <E091EF7C-7DB5-347D-9709-5E4B196D6777> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset
+    0x7fff2b8f5000 -     0x7fff2b8fdfff +libGSFont.dylib (84) <943888E5-39F4-359A-A93D-86E970BE19B6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/FontServices.framework/libGSFont.dylib
+    0x7fff2b8fe000 -     0x7fff2b90afff  com.apple.FontServices (1.0 - 1) <82799E75-08BA-3A01-94E2-47AC2E4FB5D3> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/FontServices.framework/FontServices
+    0x7fff2b90b000 -     0x7fff2ba4ffff +libFontParser.dylib (305) <CD005C9B-CAB3-3855-93A3-9A30AD188BF7> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib
+    0x7fff2c40f000 -     0x7fff2cd9dfff  com.apple.vImage (8.1 - 540) <0769AE7F-F68A-34EE-8DBF-17E0E739387C> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
+    0x7fff2cd9e000 -     0x7fff2cecffff  com.apple.audio.toolbox.AudioToolbox (1.8 - 1.8) <97C6EA65-F3F6-3D9B-8398-F4186C63C2CD> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+    0x7fff2ced0000 -     0x7fff2cf02fff +libAudioToolboxUtility.dylib (1179.3.3) <94F74AE4-35AE-3A8E-ABAE-60C43ABCED36> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libAudioToolboxUtility.dylib
+    0x7fff2d3d1000 -     0x7fff2d472fff  com.apple.ShareSheet (1566.6 - 1566.6) <6556600C-92B0-3AE4-B092-D872F6025CFC> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet
+    0x7fff2d487000 -     0x7fff2d559fff  com.apple.PDFKit (1.0 - 943) <215C9205-811E-3805-B889-D1F74B827B7A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/PDFKit.framework/PDFKit
+    0x7fff2d5cb000 -     0x7fff2d606fff  com.apple.DocumentManager (1.0 - 200.1.500) <DF05CF91-6A29-3928-84D6-2A86E91C481A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager
+    0x7fff2d848000 -     0x7fff2d8c8fff  com.apple.AuthKit (1.0 - 1) <5D45D7B6-DE85-35F7-B4C2-952BA95E946E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit
+    0x7fff2de2a000 -     0x7fff2de47fff +libCGInterfaces.dylib (540) <FD293D41-817A-3D7A-AD73-B9B238F124B1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Libraries/libCGInterfaces.dylib
+    0x7fff2de48000 -     0x7fff2dfacfff  com.apple.WebKitLegacy (8610 - 8610.1.28.10.1) <4B34C64E-1432-3FEA-873C-B5C866EA2A2E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy
+    0x7fff2dfad000 -     0x7fff2e034fff  com.apple.TextInput (1.0 - 1.0) <EAC34774-AD8C-3EAD-B65D-1FE051A44495> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextInput.framework/TextInput
+    0x7fff2e0c5000 -     0x7fff2e0c8fff  com.apple.dt.XCTTargetBootstrap (1.0 - 17155) <57BC80DD-0D70-31A5-B3EC-05A25EFA9CCF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/XCTTargetBootstrap.framework/XCTTargetBootstrap
+    0x7fff2e0c9000 -     0x7fff2e190fff  com.apple.CorePDF (5.0 - 529) <EBD10EB9-85BA-3B02-BA41-3133758B333D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CorePDF.framework/CorePDF
+    0x7fff2e9a8000 -     0x7fff2ec13fff  com.apple.RawCamera.bundle (9.10.0 - 1400.48) <15F31AA0-688D-3017-804A-DE03E25BD10A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/CoreServices/RawCamera.bundle/RawCamera
+    0x7fff2ec14000 -     0x7fff2ecdbfff  com.apple.CoreUI (1.0 - 676.1) <473DA0DD-E7B4-3EA0-853C-CC8E7EEF9FA8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreUI.framework/CoreUI
+    0x7fff2ed07000 -     0x7fff2ed36fff  com.apple.CoreVideo (1.8 - 402.0) <30274008-26CD-3282-AABB-ACC0F35FDE7D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+    0x7fff2ed37000 -     0x7fff2ef86fff  com.apple.audio.AudioToolboxCore (1.0 - 1179.3.3) <92814302-69E7-358E-9D2B-6CEA7A38D221> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore
+    0x7fff2f0cd000 -     0x7fff2f0fafff  com.apple.pluginkit.framework (1.0 - 1) <344BC901-D967-3CD1-97ED-BA35F15BC9AE> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit
+    0x7fff2f991000 -     0x7fff2f9affff  com.apple.PrototypeTools (1.0 - 1) <C9FC9591-D971-3DA9-A2C7-C24A43D403F8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools
+    0x7fff2f9b0000 -     0x7fff2f9b2fff  com.apple.MediaExperience (1.0 - 1) <4BDCC4DA-712B-3CEF-ADA3-662BC08ECC71> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience
+    0x7fff30627000 -     0x7fff30629fff +libapp_launch_measurement.dylib (14) <14A888A3-3EC1-31C3-8CB3-C3AE8B48A0EA> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libapp_launch_measurement.dylib
+    0x7fff3087d000 -     0x7fff30880fff +libsystem_configuration.dylib (1109.0.4) <B7E12274-F010-31BB-AD13-41DE4FDDC32A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_configuration.dylib
+    0x7fff309f6000 -     0x7fff30a71fff  com.apple.CoreNLP (1.0 - 244) <5827AE0D-17BA-3994-820C-0B524C82E233> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP
+    0x7fff30a72000 -     0x7fff30a73fff +liblangid.dylib (136.1) <D889E294-D009-3A83-A6BF-1108ADB03FF6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/liblangid.dylib
+    0x7fff30a74000 -     0x7fff31bb4fff  com.apple.JavaScriptCore (8610 - 8610.1.28.10.1) <0E0623D3-41D2-3AC1-80F0-163033E687CD> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore
+    0x7fff31bb5000 -     0x7fff31bfbfff +libTelephonyUtilDynamic.dylib (5344) <FC663C5C-8C7C-3DEA-8E12-7079D5E42CE4> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libTelephonyUtilDynamic.dylib
+    0x7fff321db000 -     0x7fff321f8fff  com.apple.CoreMaterial (1.0 - 1) <E9DAA09B-3A65-3D0F-9020-D70E9880BF3D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreMaterial.framework/CoreMaterial
+    0x7fff321f9000 -     0x7fff322dbfff +libxml2.2.dylib (34.5) <3B5F9FBB-BE6B-3AC6-AD01-F75726052E7E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libxml2.2.dylib
+    0x7fff343e2000 -     0x7fff34418fff  com.apple.datadetectorscore (8.0 - 671) <EC45C608-7F8A-3907-B9EA-C2D1F85810CE> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore
+    0x7fff34b92000 -     0x7fff34bb6fff  com.apple.persistentconnection (1.0 - 1.0) <36905BA8-8CAB-3642-BF92-B072E28F008D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PersistentConnection.framework/PersistentConnection
+    0x7fff34efe000 -     0x7fff34f06fff  com.apple.CorePhoneNumbers (1.0 - 1) <3130AF85-38BC-3CD4-A99E-EE8260CB93CA> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers
+    0x7fff35020000 -     0x7fff35046fff  com.apple.CoreSVG (1.0 - 149) <0A5B29E0-CD6A-3BDD-893D-8ADEA633D599> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG
+    0x7fff35d41000 -     0x7fff35dcdfff  com.apple.CoreBluetooth (1.0 - 1) <C7D599FB-5A23-3D96-8414-A7A460D17337> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
+    0x7fff35dce000 -     0x7fff35dd1fff +libsystem_sandbox.dylib (1441.0.4) <B35C392E-00F0-3241-AE77-EEE216C3AEB8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_sandbox.dylib
+    0x7fff36032000 -     0x7fff36074fff  com.apple.MobileInstallation (2.0 - 1.0) <E1F7CB04-63FF-3AAA-8E24-45E86282D940> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation
+    0x7fff36075000 -     0x7fff36140fff  com.apple.Metal (244.27 - 244.27) <AF4F646D-2438-3A30-885C-BA864FFF1E3F> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Metal.framework/Metal
+    0x7fff36141000 -     0x7fff3614bfff  com.apple.MediaAccessibility (1.0 - 130) <97377BA1-C354-3ADF-837A-1D524B322AFB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MediaAccessibility.framework/MediaAccessibility
+    0x7fff36161000 -     0x7fff36168fff +libsystem_dnssd.dylib (1310.11.1) <73EFA863-C297-3C67-9041-E4C12BDD6C1B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_dnssd.dylib
+    0x7fff36169000 -     0x7fff3616ffff  com.apple.PushKit (1.0 - 1) <C71BCF38-B9A6-31DA-B711-A40B9C17F64D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/PushKit.framework/PushKit
+    0x7fff36170000 -     0x7fff36278fff  com.apple.FileProvider (268.18 - 268.18) <6B1F448A-77FD-3854-B853-98B368DD4C54> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/FileProvider.framework/FileProvider
+    0x7fff36279000 -     0x7fff3627dfff  com.apple.LinguisticData (1.0 - 399) <2AE1F9BC-42DA-3E9D-B641-283F70EE3BC5> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/LinguisticData.framework/LinguisticData
+    0x7fff362bb000 -     0x7fff363a3fff  com.apple.VideoToolbox (1.0 - 2753.1.9) <6145696B-B85E-396C-AF56-D45ADAA48430> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox
+    0x7fff36a96000 -     0x7fff36aacfff +libcoretls.dylib (169) <772B176A-B4F2-3123-B5D0-D6A9F9E23494> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libcoretls.dylib
+    0x7fff36ac5000 -     0x7fff36be8fff +libate.dylib (3.0.4) <A9F2218F-E910-3003-BFD7-D834BC05EA9E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libate.dylib
+    0x7fff37fb1000 -     0x7fff37fdafff  com.apple.Pasteboard (1.0 - 1000) <DB2F686E-1D20-304A-B440-D3CBB797B576> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Pasteboard.framework/Pasteboard
+    0x7fff38258000 -     0x7fff38267fff  com.apple.datamigration (1.0 - 1.0) <D508D3B9-3F7B-34FD-B3CA-9C4E38019E04> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
+    0x7fff38307000 -     0x7fff38332fff  com.apple.IconServices (440.23 - 440.23) <4D915ED2-584E-31FF-9DB0-B037A6BE5013> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/IconServices.framework/IconServices
+    0x7fff38711000 -     0x7fff38723fff +libprequelite.dylib (103) <92FD852A-F5A2-36AB-A2B0-A24A5F1B3510> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libprequelite.dylib
+    0x7fff3874d000 -     0x7fff3875ffff  com.apple.CoreEmoji (1.0 - 126) <D16C8A70-BA52-3722-A3D3-65D592C4D434> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji
+    0x7fff38ace000 -     0x7fff38ad5fff  com.apple.CoreTime (282) <A9BB72D5-669F-367E-A402-3620F62002F9> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreTime.framework/CoreTime
+    0x7fff39b16000 -     0x7fff3a1a3fff +libBNNS.dylib (288.11.2) <E9C56945-6FDE-3A69-A67F-494D887C9379> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib
+    0x7fff3b549000 -     0x7fff3b55efff  com.apple.LocalAuthentication (1.0 - 827.11.2) <8E712C2B-1D7E-36AA-A36D-72B2906B0C23> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
+    0x7fff3b6fc000 -     0x7fff3b893fff +libBLAS.dylib (1336.0.1) <46117704-58E1-3AA9-B104-47C5BFF49DC8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib
+    0x7fff3b894000 -     0x7fff3b8a3fff  com.apple.coretelephony.CTCarrierSpace (1.0 - 1) <C976DC47-CF42-3885-A867-2C4F8DC4E5BA> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CTCarrierSpace.framework/CTCarrierSpace
+    0x7fff3c45a000 -     0x7fff3c466fff  com.apple.mobileicons.framework (1.0 - 372.0) <438ED8F4-865B-3270-9073-B020FA7B8D63> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MobileIcons.framework/MobileIcons
+    0x7fff3c87e000 -     0x7fff3c884fff  com.apple.ist.IdleTimerServices (1.0 - 1) <F802FE93-415E-3403-9AC4-0445D1F0FD99> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices
+    0x7fff3d1da000 -     0x7fff3d222fff  com.apple.ProtectedCloudStorage (1.0 - 1) <6C049C55-4908-38DF-875C-22CDAAB4ED9A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/ProtectedCloudStorage
+    0x7fff3d309000 -     0x7fff3d314fff  com.apple.opengles (18.0.31 - 18.0.31) <D14ED973-1FA7-35D9-912C-38A65D0F1661> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+    0x7fff3d315000 -     0x7fff3d49bfff +libGLProgrammability.dylib (18.0.31) <8C54A0A7-6FB8-30E7-BFFF-564E37BAA01B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libGLProgrammability.dylib
+    0x7fff3d49c000 -     0x7fff3d4a5fff +libGFXShared.dylib (18.0.31) <F2AECED2-27ED-3A76-BE9D-D7429538B08F> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libGFXShared.dylib
+    0x7fff3d4a6000 -     0x7fff3d4d5fff  com.apple.CoreAuthentication.SharedUtils (1.0 - 827.11.2) <E980A39F-6756-3A21-AFDA-DA46FDF5885E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/LocalAuthentication.framework/Support/SharedUtils.framework/SharedUtils
+    0x7fff3e066000 -     0x7fff3e0a6fff  com.apple.StreamingZip (1.0 - 1) <0B1A8E06-11C3-3787-BDE7-28FDEE3FA95A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip
+    0x7fff402e0000 -     0x7fff402e5fff +libgermantok.dylib (24) <98BBA168-3311-341C-9E33-AB5A4041896B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libgermantok.dylib
+    0x7fff402e6000 -     0x7fff40340fff +libmecab.dylib (924) <C26B941E-F626-383A-9BBC-FB9FF03AC5F5> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libmecab.dylib
+    0x7fff428cb000 -     0x7fff4293cfff +libarchive.2.dylib (83.11.1) <F01FC737-0BA6-3800-9FF6-709437421ABB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libarchive.2.dylib
+    0x7fff4293d000 -     0x7fff42973fff  com.apple.C2 (1.3 - 569) <E97AEFC2-7451-3B31-8045-7628A2A6F974> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/C2.framework/C2
+    0x7fff42974000 -     0x7fff429b4fff  com.apple.NaturalLanguage (1.0 - 84) <F2F72A0F-9AB8-34CE-A938-84B2CF5E3955> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage
+    0x7fff42a4b000 -     0x7fff42a4cfff +libsystem_coreservices.dylib (125.2) <7BA84C0B-E09E-3CFF-825B-CEC833C5F093> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_coreservices.dylib
+    0x7fff42c7a000 -     0x7fff42c83fff +libcopyfile.dylib (173.0.1) <AB7442DE-0149-37D1-97E8-95037B0E6C0B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libcopyfile.dylib
+    0x7fff43648000 -     0x7fff43692fff  com.apple.ChunkingLibrary (334 - 334) <E887B9EE-3876-3B3C-A2BF-094A35CBAB4E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary
+    0x7fff44d44000 -     0x7fff44d4afff  com.apple.URLFormatting (145 - 145.2) <4743C8B4-1ED0-3DFC-903F-B50E7134DEAD> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting
+    0x7fff45453000 -     0x7fff4546bfff  com.apple.SecurityFoundation (1.0 - 1) <D6963E7A-28BB-3C56-849F-98142490A623> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SecurityFoundation.framework/SecurityFoundation
+    0x7fff454e9000 -     0x7fff45541fff  com.apple.CoreLocationProtobuf (1 - 1) <95CB2D0F-AAB9-3829-8157-97DBE7D70F76> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreLocationProtobuf.framework/CoreLocationProtobuf
+    0x7fff45c43000 -     0x7fff45c51fff +libperfcheck.dylib (41) <D5958B90-0403-3694-BFC5-C0C878E0BF07> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libperfcheck.dylib
+    0x7fff45c52000 -     0x7fff45c5efff +libAudioStatistics.dylib (23) <B3CB8D48-78A1-3893-B6A9-8FDA8E21D682> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libAudioStatistics.dylib
+    0x7fff45cfe000 -     0x7fff45d1afff  com.apple.audio.caulk (1.0 - 70) <F9EB3CB9-1F2B-3CD1-856B-D8EC84FAE7F2> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/caulk.framework/caulk
+    0x7fff45d57000 -     0x7fff45d5afff  com.apple.MobileSystemServices (1.0 - 1) <524344DB-0C36-30D6-90D0-5592EA28E825> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices
+    0x7fff46649000 -     0x7fff46686fff +libGLImage.dylib (18.0.31) <E22BE744-C82B-3969-ADAA-E36A61ADAD7C> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libGLImage.dylib
+    0x7fff4694c000 -     0x7fff4695efff +libSparseBLAS.dylib (1336.0.1) <9EA12F9E-860D-3953-9E1D-D21E654030BD> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib
+    0x7fff475dc000 -     0x7fff475f2fff +libLinearAlgebra.dylib (1336.0.1) <D64CDC6D-6E51-317A-A00F-6CBA21782059> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib
+    0x7fff4854e000 -     0x7fff4859ffff  com.apple.PhysicsKit (1.0 - 1) <F6A6D50B-5E6B-3D7F-A842-EB9FFCC68EBF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit
+    0x7fff485a0000 -     0x7fff485f1fff  com.apple.CorePrediction (1.0 - 1) <FC814299-F0FB-3244-9DE9-CE3D452BB66F> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CorePrediction.framework/CorePrediction
+    0x7fff48a32000 -     0x7fff48a7bfff  com.apple.Safari.SafeBrowsing (16610 - 16610.1.28.10.1) <192FC4F5-9E83-3D15-A5DB-BB96411E3D46> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/SafariSafeBrowsing
+    0x7fff48f33000 -     0x7fff48f51fff  com.apple.GenerationalStorage (2.0 - 322) <FF88E75E-A178-372C-9BD8-D5017519CBAE> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GenerationalStorage.framework/GenerationalStorage
+    0x7fff496fa000 -     0x7fff49878fff +libvDSP.dylib (760.11.4) <8EFBE35F-CE18-3219-96BC-46679D0DD6FF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib
+    0x7fff4a110000 -     0x7fff4a110fff  com.apple.Accelerate (1.11 - Accelerate 1.11) <95EA8BB8-4C24-3F96-B4FF-D75D36477FA6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Accelerate
+    0x7fff4a111000 -     0x7fff4a4bdfff +libLAPACK.dylib (1336.0.1) <D2626810-CC48-3960-8F80-E92F7E50DC77> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib
+    0x7fff4a4be000 -     0x7fff4a4c3fff +libQuadrature.dylib (7) <D5424D6F-A59B-3243-8CA1-2CEE728B8E6D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib
+    0x7fff4a4c4000 -     0x7fff4a60efff +libvMisc.dylib (760.11.4) <4C75776A-56D7-342D-A352-93E85109010A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib
+    0x7fff4a60f000 -     0x7fff4a60ffff  com.apple.Accelerate.vecLib (3.11 - vecLib 3.11) <AE3B1A2E-5D8F-3051-AF67-5883E851773B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib
+    0x7fff4a691000 -     0x7fff4a781fff  com.apple.combine (1.0 - 235.101) <FF814E33-9430-3522-826F-839A079CD9C8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/Combine.framework/Combine
+    0x7fff4a888000 -     0x7fff4a8b1fff  com.apple.GLKit (124 - 124) <0AB09B5C-D24C-35C6-8023-CC3E9F846A8C> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/GLKit.framework/GLKit
+    0x7fff4a8f2000 -     0x7fff4a949fff  com.apple.MetalPerformanceShaders.MPSCore (1.0 - 1) <D02FB693-55E3-3F0A-81CE-1C8DBD2767CF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore
+    0x7fff4a94a000 -     0x7fff4a9d9fff  com.apple.MetalPerformanceShaders.MPSImage (1.0 - 1) <50EB2FA5-AA2E-3084-8284-4A7A7B3E75CA> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage
+    0x7fff4a9da000 -     0x7fff4aa06fff  com.apple.MetalPerformanceShaders.MPSMatrix (1.0 - 1) <A9ABF92B-8C46-3C3E-8935-71AF8E9D980D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix
+    0x7fff4aa07000 -     0x7fff4aa43fff  com.apple.MetalPerformanceShaders.MPSNDArray (1.0 - 1) <1EB7E504-49CE-30CD-AC6E-A46953794CC0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray
+    0x7fff4aa44000 -     0x7fff4ac5dfff  com.apple.MetalPerformanceShaders.MPSNeuralNetwork (1.0 - 1) <782CD263-A0B1-32B9-9E9C-C5BF88CA1DE8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork
+    0x7fff4ac5e000 -     0x7fff4acabfff  com.apple.MetalPerformanceShaders.MPSRayIntersector (1.0 - 1) <03D29D48-3AB7-3FD2-871E-B55634EBB661> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector
+    0x7fff4acac000 -     0x7fff4acacfff  com.apple.MetalPerformanceShaders.MetalPerformanceShaders (1.0 - 1) <5AEF13D9-9DAD-364A-8F40-34D73A748C21> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders
+    0x7fff4acc0000 -     0x7fff4acc0fff  com.apple.MobileCoreServices (1116.2.2 - 1116.2.2) <DA607DAA-5155-3F92-A6C0-FD93DEA7D5A5> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+    0x7fff4accb000 -     0x7fff4accdfff +libCVMSPluginSupport.dylib (18.0.31) <EA59B703-2C23-338F-87BA-AF90B8DA6CD0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libCVMSPluginSupport.dylib
+    0x7fff4acce000 -     0x7fff4acd4fff +libCoreFSCache.dylib (177.19) <C15392FC-AEA7-3625-A217-046B8BB449D9> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libCoreFSCache.dylib
+    0x7fff4acd5000 -     0x7fff4acddfff +libCoreVMClient.dylib (177.19) <FAACAF1B-7951-3D08-9EE6-C4B9CFBF014D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libCoreVMClient.dylib
+    0x7fff4b117000 -     0x7fff4b117fff  com.apple.UIKit (1.0 - 3987.9) <FB5D6B2A-07B3-360E-9143-C6118E2E4016> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/UIKit.framework/UIKit
+    0x7fff4b881000 -     0x7fff4b88cfff  com.apple.AppleIDAuthSupport (1.0 - 1) <722A258E-A4B4-3E1D-9261-8D8CD8B98DEF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AppleIDAuthSupport.framework/AppleIDAuthSupport
+    0x7fff4b88d000 -     0x7fff4b8d6fff  com.apple.AppleJPEG (1.0 - 1) <FDA31B2C-FCA8-3B5C-878A-A6F33B4615DC> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AppleJPEG.framework/AppleJPEG
+    0x7fff4b956000 -     0x7fff4b97afff  com.apple.applesauce (1.0 - 16.26) <8F257096-3B0F-3611-846A-1D29A93843B5> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AppleSauce.framework/AppleSauce
+    0x7fff4ba6d000 -     0x7fff4ba9ffff  com.apple.bom (14.0 - 231) <64E80275-2693-322B-B551-76E296AE1085> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Bom.framework/Bom
+    0x7fff4c899000 -     0x7fff4c89dfff  com.apple.CoreOptimization (1.0 - 1) <45DCBE00-75D9-3F73-9E8C-25E47B90262F> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreOptimization.framework/CoreOptimization
+    0x7fff4ca9c000 -     0x7fff4cabafff  com.apple.DocumentManagerCore (1.0 - 200.1.500) <75580E73-7BA1-36DC-B7AF-1F7A8538B442> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore
+    0x7fff4cb40000 -     0x7fff4cb42fff  com.apple.DragUI (1.0 - 1) <ED3A0834-4F7B-39B8-AE95-32870868EFE8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/DragUI.framework/DragUI
+    0x7fff4cb7a000 -     0x7fff4d213fff  com.apple.vision.EspressoFramework (1.0 - 251) <1CBB9447-59C6-3EDF-880F-5039436CD2E7> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Espresso.framework/Espresso
+    0x7fff4d4f7000 -     0x7fff4d90ffff  com.apple.vision.FaceCore (4.1.2 - 4.1.2) <07F5079B-DCB0-3FF8-85B6-5140B9E846EF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/FaceCore.framework/FaceCore
+    0x7fff4d9f3000 -     0x7fff4da30fff +libGSFontCache.dylib (192.9.0.0.2) <1E886905-231C-32B1-A729-2CBACC1CB4F9> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/FontServices.framework/libGSFontCache.dylib
+    0x7fff4da95000 -     0x7fff4daa5fff +libhvf.dylib (305) <B2FDE0DA-FB55-39FD-BE19-DB2A45CBA567> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/FontServices.framework/libhvf.dylib
+    0x7fff4eaea000 -     0x7fff4eaf8fff  com.apple.GraphVisualizer (1.0 - 210.1) <BD53BF62-8EA9-3D86-A61F-95BD07C26127> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/GraphVisualizer.framework/GraphVisualizer
+    0x7fff4f9c4000 -     0x7fff4f9ccfff  com.apple.InternationalSupport (1.0 - 59) <4ED06CEF-191A-30D8-B196-CF5FC8BED7FC> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/InternationalSupport.framework/InternationalSupport
+    0x7fff4fc47000 -     0x7fff4fcf3fff  com.apple.gpusw.MetalTools (1.0 - 1) <9F6F9DDA-B749-33D2-BB87-E8E713FB8A50> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools
+    0x7fff50023000 -     0x7fff5006cfff  com.apple.OTSVG (1.0 - 677) <CE84FC4C-F227-38E2-B1E5-FB203A73B8CF> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/OTSVG.framework/OTSVG
+    0x7fff50674000 -     0x7fff50674fff  com.apple.PhoneNumbers (1.0 - 1) <B428FFA4-3251-34DA-A681-9DC8E5E2A226> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PhoneNumbers.framework/PhoneNumbers
+    0x7fff50dfe000 -     0x7fff50e02fff  com.apple.RevealCore (1.0 - 17) <252A9654-ED5B-3565-A67E-BA3C3C2FAEF2> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/RevealCore.framework/RevealCore
+    0x7fff5153d000 -     0x7fff5160dfff  com.apple.TextureIO (3.10.9 - 3.10.9) <29A7B48B-A84A-3B10-AAE2-4A8B3BEEA328> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/TextureIO.framework/TextureIO
+    0x7fff52621000 -     0x7fff52f37fff +libwebrtc.dylib (7610.1.28.10.1) <A0CB6D74-60F3-3841-BB21-820E39584A9C> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib
+    0x7fff53007000 -     0x7fff53013fff  com.apple.perfdata (1.0 - 67.0.1) <3669D797-9F8D-3229-AA55-8320EFB265C6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/perfdata.framework/perfdata
+    0x7fff530c8000 -     0x7fff531cefff +libAWDSupportFramework.dylib (3696) <0BB6749D-1810-3B54-A23C-E93193A2FC9E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libAWDSupportFramework.dylib
+    0x7fff531e7000 -     0x7fff531effff +libChineseTokenizer.dylib (37) <A605A139-939E-30FC-A1F6-6C08E4C4D9EB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libChineseTokenizer.dylib
+    0x7fff5341f000 -     0x7fff53420fff +libSystem.B.dylib (1292) <6E34C14A-1B73-3739-B24D-702B355402D3> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libSystem.B.dylib
+    0x7fff53421000 -     0x7fff53422fff +libThaiTokenizer.dylib (3) <D8A2C77D-64D8-3BEC-B2F5-FAD4BF1D7FCC> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libThaiTokenizer.dylib
+    0x7fff53423000 -     0x7fff5343afff +libapple_nghttp2.dylib (1.41) <B1143FA5-0913-3DCE-ACA7-9247E79BFC3B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libapple_nghttp2.dylib
+    0x7fff5343b000 -     0x7fff5344bfff +libbsm.0.dylib (68) <C9C68978-BD19-34E3-97F5-232A8F7239A6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libbsm.0.dylib
+    0x7fff5344c000 -     0x7fff53458fff +libbz2.1.0.dylib (44) <11379F45-D517-3E1A-B29F-6805FBE69968> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libbz2.1.0.dylib
+    0x7fff53459000 -     0x7fff53459fff +libcharset.1.dylib (59) <14B92661-BBD9-312F-8C70-CF10056035E9> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libcharset.1.dylib
+    0x7fff5345a000 -     0x7fff5346afff +libcmph.dylib (8) <02C1F5F4-985C-3013-978C-3CF70E1745F0> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libcmph.dylib
+    0x7fff5346b000 -     0x7fff53482fff +libcompression.dylib (96.0.4) <41B1E3AD-9E14-3507-912D-284FBD716042> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libcompression.dylib
+    0x7fff53483000 -     0x7fff53484fff +libcoretls_cfhelpers.dylib (169) <BB643230-64A6-32D5-A664-B15042B37947> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libcoretls_cfhelpers.dylib
+    0x7fff53485000 -     0x7fff5348afff +libcupolicy.dylib (8159.2) <2D7AC92E-3A34-31A1-A7DA-398923BCF93A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libcupolicy.dylib
+    0x7fff534c4000 -     0x7fff534c8fff +libheimdal-asn1.dylib (597.0.3) <3A9DC467-3730-3958-98E7-443E8FE8B5C9> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libheimdal-asn1.dylib
+    0x7fff534c9000 -     0x7fff535b9fff +libiconv.2.dylib (59) <B8529A7E-C6C2-3618-8828-91868F979EFD> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libiconv.2.dylib
+    0x7fff535ba000 -     0x7fff535d2fff +liblzma.5.dylib (16) <9B03551E-EBAA-3F5C-AA06-691A82208879> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/liblzma.5.dylib
+    0x7fff538ed000 -     0x7fff538fffff +libz.1.dylib (76) <A8AB7981-BC2F-3B6F-B71B-04EA9D2E8394> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libz.1.dylib
+    0x7fff53913000 -     0x7fff53915fff +liblog_network.dylib (2288.0.26) <BB3000FE-BA8D-3E28-83DE-7A6F936F5479> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/log/liblog_network.dylib
+    0x7fff53ca6000 -     0x7fff53caafff +libcache.dylib (83) <C7C5D3F3-0E15-3DC6-B92D-3C101FD3DE35> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libcache.dylib
+    0x7fff53cab000 -     0x7fff53cb6fff +libcommonCrypto.dylib (60178) <39BF92A8-B459-3064-A29F-015EC51C285D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libcommonCrypto.dylib
+    0x7fff53cb7000 -     0x7fff53cbefff +libcompiler_rt.dylib (102.3) <E9587C56-B503-3195-A8E7-EBD5A98260D6> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libcompiler_rt.dylib
+    0x7fff53ddd000 -     0x7fff53dddfff +liblaunch.dylib (2038.0.15) <F2426EB2-539C-3595-9C05-89B846B589C1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/liblaunch.dylib
+    0x7fff53dde000 -     0x7fff53de3fff +libmacho.dylib (973.0.1) <20FFF494-10BE-37D4-A86B-8E597A8A47F8> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libmacho.dylib
+    0x7fff53de4000 -     0x7fff53de5fff +libremovefile.dylib (49.0.1) <D256DEF5-9640-3791-8F9B-099534E0BBA3> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libremovefile.dylib
+    0x7fff53de6000 -     0x7fff53de8fff +libsystem_featureflags.dylib (28.0.1) <46696B40-A0CE-3B69-BB85-7ACA98BE10D4> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_featureflags.dylib
+    0x7fff53de9000 -     0x7fff53e2efff +libsystem_m.dylib (3186.0.3) <04432947-8852-366C-A0A2-5FF0328EA85D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_m.dylib
+    0x7fff53e2f000 -     0x7fff53e37fff +libunwind.dylib (200.10) <C433A306-D862-3455-BF31-C2FD2AE39531> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libunwind.dylib
+    0x7fff540bb000 -     0x7fff54124fff  com.apple.private.NanoRegistry (1.0 - 1) <3077BF68-A6C7-300B-86AC-60222CC8513B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry
+    0x7fff54d35000 -     0x7fff559eefff +libLLVMContainer.dylib (602.2.48.3) <78BD7D06-7671-3B5F-875A-0D7C04A6A895> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/OpenGLES.framework/libLLVMContainer.dylib
+    0x7fff5666c000 -     0x7fff5667cfff  com.apple.UniformTypeIdentifiers (631 - 631) <96C1BC20-39DE-3B8C-9753-0BD252FB47C7> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers
+    0x7fff57f78000 -     0x7fff57f82fff  com.apple.CMCaptureCore (1.0 - 78.11.1) <9D9BCC26-C23E-3BFD-9D4E-0B358C15022B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore
+    0x7fff582c6000 -     0x7fff58305fff  com.apple.CoreAutoLayout (1.0 - 11) <FC1A2BA4-FE99-3CE3-B37B-12D08F51D09A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/CoreAutoLayout.framework/CoreAutoLayout
+    0x7fff5860d000 -     0x7fff58614fff  com.apple.ExtensionFoundation (17.3 - 17.3) <AA3EA448-EBAD-3723-AA2A-FE7BDEDBBEE1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ExtensionFoundation.framework/ExtensionFoundation
+    0x7fff58615000 -     0x7fff5862cfff  com.apple.ExtensionKit (17.3 - 17.3) <EE11EBE4-A04C-3CCB-9EAE-12BCB76C199A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/ExtensionKit.framework/ExtensionKit
+    0x7fff58cf0000 -     0x7fff58cfafff  com.apple.PointerUIServices (1.0 - 1) <0A84BBFD-5416-348E-8D67-CF7F975DAF86> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/PointerUIServices.framework/PointerUIServices
+    0x7fff5953d000 -     0x7fff5954bfff  com.apple.CoreSimulator.SimFramebufferClient (732.8 - 732.8) <08D22170-34AC-334A-B094-3737F880B449> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SimFramebufferClient.framework/SimFramebufferClient
+    0x7fff5954c000 -     0x7fff5954ffff  com.apple.iphonesimulator.SimulatorClient (1.0 - 1) <06759A28-315A-3090-AAAC-E788133A81B1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SimulatorClient.framework/SimulatorClient
+    0x7fff5a335000 -     0x7fff5a335fff  com.apple.SoftLinking (1.0 - 1) <372D3FE2-A60F-35A4-AC3F-C72B4B9980A1> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking
+    0x7fff5de6c000 -     0x7fff5de84fff +libexpat.1.dylib (26) <F559A5CB-963B-3752-8881-20BC0846B7F7> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/libexpat.1.dylib
+    0x7fff5df69000 -     0x7fff5df6bfff +libsystem_collections.dylib (1439.0.3) <469C6D04-FE3E-3C7F-A3A7-289B2B102E9A> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_collections.dylib
+    0x7fff5df6c000 -     0x7fff5df9afff +libsystem_kernel.dylib (7195.60.75) <4BD61365-29AF-3234-8002-D989D295FDBB> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_kernel.dylib
+    0x7fff5df9b000 -     0x7fff5dfa4fff +libsystem_platform.dylib (254.60.1) <3F7F6461-7B5C-3197-ACD7-C8A0CFCC6F55> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_platform.dylib
+    0x7fff5dfa5000 -     0x7fff5dfa5fff +libsystem_product_info_filter.dylib (8.0.1) <F978B262-C102-3A42-ADCC-C9C079EFFC8B> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_product_info_filter.dylib
+    0x7fff5dfa6000 -     0x7fff5dfb1fff +libsystem_pthread.dylib (454.60.1) <8DD3A0BC-2C92-31E3-BBAB-CE923A4342E4> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_pthread.dylib
+    0x7fff5dfb2000 -     0x7fff5dfb3fff +libsystem_sim_kernel.dylib (227.0.1) <38931110-B28B-348B-8BA6-62E9E89117B3> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_sim_kernel.dylib
+    0x7fff5dfb4000 -     0x7fff5dfb4fff +libsystem_sim_kernel_host.dylib (227.0.1) <92EBE71E-0ACC-3F0C-B39A-AB155F09FD34> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_sim_kernel_host.dylib
+    0x7fff5dfb5000 -     0x7fff5dfb7fff +libsystem_sim_platform.dylib (227.0.1) <EEF3C8F1-E072-3159-A466-6EE601DE5C43> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_sim_platform.dylib
+    0x7fff5dfb8000 -     0x7fff5dfb8fff +libsystem_sim_platform_host.dylib (227.0.1) <40FF96EF-0882-38A4-B7A0-DCB5C2BADD1D> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_sim_platform_host.dylib
+    0x7fff5dfb9000 -     0x7fff5dfb9fff +libsystem_sim_pthread.dylib (227.0.1) <071D64F6-007B-3F03-B4AC-9276A6906B33> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_sim_pthread.dylib
+    0x7fff5dfba000 -     0x7fff5dfbafff +libsystem_sim_pthread_host.dylib (227.0.1) <FA3119E4-8830-3562-80ED-F3278C6BBF0E> /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 14.1.simruntime/Contents/Resources/RuntimeRoot/usr/lib/system/libsystem_sim_pthread_host.dylib
+
+Translated Code Information:
+  tmp0: 0xffffffffffffffff tmp1: 0x0000000103b43a04 tmp2: 0x0000000113a68ec0
+
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 1588
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=760.9M resident=0K(0%) swapped_out_or_unallocated=760.9M(100%)
+Writable regions: Total=1.9G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.9G(100%)
+ 
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Activity Tracing                   256K        1 
+CG raster data                      28K        1 
+CoreAnimation                     11.5M        7 
+Foundation                          16K        1 
+JS JIT generated code              1.0G       64 
+Kernel Alloc Once                    8K        1 
+MALLOC                           239.4M       62 
+MALLOC guard page                  128K        6 
+MALLOC_NANO (reserved)           384.0M        1         reserved VM address space (unallocated)
+Rosetta Arena                     2048K        1 
+Rosetta Generic                   22.8M     5828 
+Rosetta IndirectBranch            4096K        1 
+Rosetta JIT                      128.0M        1 
+Rosetta Return Stack               760K       76 
+Rosetta Thread Context             760K       76 
+SQLite page cache                  320K        5 
+STACK GUARD                         28K        7 
+Stack                             27.4M       38 
+Stack Guard                       56.1M       31 
+VM_ALLOCATE                       24.1M       11 
+VM_ALLOCATE (reserved)              20K        1         reserved VM address space (unallocated)
+WebKit Malloc                     36.6M       40 
+__DATA                            10.9M      283 
+__DATA_CONST                      21.2M      269 
+__DATA_DIRTY                        17K        5 
+__FONT_DATA                          4K        1 
+__GLSLBUILTINS                    1904K        1 
+__LINKEDIT                       459.8M       36 
+__OBJC_RO                         53.9M        1 
+__OBJC_RW                         2592K        1 
+__TEXT                           301.3M      281 
+__UNICODE                          588K        1 
+mapped file                        4.1G      465 
+shared memory                       16K        1 
+===========                     =======  ======= 
+TOTAL                              6.9G     7605 
+TOTAL, minus reserved VM space     6.5G     7605 
+
